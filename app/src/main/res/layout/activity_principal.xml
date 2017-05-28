@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    tools:context="br.com.posmobile.newcaixa.PrincipalActivity"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:ignore="DisableBaselineAlignment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="InefficientWeight,UselessParent">
+
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="125dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:contentDescription="logomarca"
+            app:srcCompat="@drawable/ic_caixa_economica_federal"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/tv_abertura"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btn_entrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+
+            android:gravity="center"
+            android:text="@string/btn_entrar"
+            android:textColor="@android:color/background_light"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+    </LinearLayout>
+
+</LinearLayout>
