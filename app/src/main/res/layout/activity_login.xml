@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="false"
-    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
     tools:context="br.com.posmobile.newcaixa.LoginActivity">
 
 
@@ -24,26 +25,49 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="@string/et_usuario"
-            tools:ignore="NestedWeights" />
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:backgroundTint="@android:color/background_light"
+            android:textColorHint="@android:color/background_light"
+            android:textColor="@android:color/background_light" />
 
         <EditText
             android:id="@+id/senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
             android:hint="@string/tv_senha"
-            />
+            android:inputType="textPassword"
+            android:textColor="@android:color/background_light"
+            android:backgroundTint="@android:color/background_light"
+            android:textColorHint="@android:color/background_light" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnContinuar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@color/colorAccent"
             android:gravity="center"
-            android:text="@string/btn_continuar" />
+            android:text="@string/btn_continuar"
+            android:textColor="@android:color/background_light" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lvServicosLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 

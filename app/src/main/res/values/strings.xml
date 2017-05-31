@@ -14,4 +14,7 @@
     <string name="lb_usuario">Usuário</string>
     <string name="btn_entrar">Entrar</string>
     <string name="tv_abertura">Bem vindo ao seu Banco Mobile</string>
+
+    <string name="msg_erro_user">Usuário inexistente</string>
+    <string name="msg_erro_senha">Senha inválida</string>
 </resources>
