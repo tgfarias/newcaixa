@@ -1,6 +1,7 @@
 package br.com.posmobile.newcaixa;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -45,11 +46,11 @@ public class LoginActivity extends Activity {
             public void onClick(View v) {
                 String usuario = edUsuario.getText().toString();
                 String senha = edSenha.getText().toString();
-                if(usuario.length() == 0)
-                    edUsuario.setError("Campo usuário obrigatório");
-                else if(senha.length() == 0)
-                    edSenha.setError("Campo senha obrigatório");
-                else
+//                if(usuario.length() == 0)
+//                    edUsuario.setError("Campo usuário obrigatório");
+//                else if(senha.length() == 0)
+//                    edSenha.setError("Campo senha obrigatório");
+//                else
                     login(usuario, senha);
             }
         });
@@ -57,21 +58,22 @@ public class LoginActivity extends Activity {
 
     private void login(String user, String pass)
     {
-        if(!user.equals("Cliente")){
-            edUsuario.setError("Usuário não cadastrado/ativo");
-            edUsuario.setFocusable(true);
-        }
-        else if(!pass.equals("123entrar")) {
-            edSenha.setError("Senha incorreta, tente novamente");
-            edSenha.setText("");
-            edSenha.setFocusable(true);
-        }
-        else
-        {
+//        if(!user.equals("Cliente")){
+//            edUsuario.setError("Usuário não cadastrado/ativo");
+//            edUsuario.setFocusable(true);
+//        }
+//        else if(!pass.equals("123entrar")) {
+//            edSenha.setError("Senha incorreta, tente novamente");
+//            edSenha.setText("");
+//            edSenha.setFocusable(true);
+//        }
+//        else
+//        {
             Toast.makeText(this, "Login realizado com sucesso", Toast.LENGTH_LONG).show();
             edUsuario.setText("");
             edSenha.setText("");
-        }
-
+            Intent i = new Intent(LoginActivity.this, LogonActivity.class);
+            startActivity(i);
+//        }
     }
 }
