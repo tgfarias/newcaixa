@@ -4,6 +4,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.RelativeLayout;
 
 public class LogonActivity extends AppCompatActivity {
     private TabLayout tabLayout;
@@ -33,4 +35,6 @@ public class LogonActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         viewPager.setCurrentItem(savedInstanceState.getInt(POSITION));
     }
+
+
 }

@@ -17,4 +17,7 @@
 
     <string name="msg_erro_user">Usuário inexistente</string>
     <string name="msg_erro_senha">Senha inválida</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

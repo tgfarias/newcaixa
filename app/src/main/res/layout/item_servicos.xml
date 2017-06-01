@@ -4,7 +4,7 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvItem"
+        android:id="@+id/tvLocal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -18,23 +18,23 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/tvLabel"
+        android:id="@+id/tvValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tvItem"
-        android:layout_alignStart="@+id/tvItem"
+        android:layout_alignLeft="@+id/tvLocal"
+        android:layout_alignStart="@+id/tvLocal"
         android:paddingBottom="10dp"
         android:text="Ajuda"
         android:textColor="#aaaaaa"
         android:textSize="12sp"
-        android:layout_below="@+id/tvItem" />
+        android:layout_below="@+id/tvLocal" />
 
     <ImageView
-        android:id="@+id/ivSeta"
+        android:id="@+id/ivIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_media_play"
-        android:layout_alignBottom="@+id/tvLabel"
+        android:layout_alignBottom="@+id/tvValor"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true" />

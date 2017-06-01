@@ -9,6 +9,7 @@ import android.support.v4.content.ContextCompat;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ImageSpan;
+import android.widget.RelativeLayout;
 
 /**
  * Created by tiagocosta on 31/05/2017.

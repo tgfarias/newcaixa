@@ -42,9 +42,9 @@ public class ServicoAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         Servico servico = servicos.get(position);
         View linha = LayoutInflater.from(ctx).inflate(R.layout.item_servicos, null);
-        TextView tvTitulo = (TextView) linha.findViewById(R.id.tvItem);
-        TextView tvSubtitulo = (TextView) linha.findViewById(R.id.tvLabel);
-        ImageView ivSeta = (ImageView) linha.findViewById(R.id.ivSeta);
+        TextView tvTitulo = (TextView) linha.findViewById(R.id.tvLocal);
+        TextView tvSubtitulo = (TextView) linha.findViewById(R.id.tvValor);
+        ImageView ivSeta = (ImageView) linha.findViewById(R.id.ivIcon);
         //Resources res = ctx.getResources();
         tvTitulo.setText(servico.titulo);
         tvSubtitulo.setText(servico.subtitulo);

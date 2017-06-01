@@ -21,7 +21,7 @@
 
 
     <ImageView
-        android:id="@+id/ivSeta"
+        android:id="@+id/ivIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_media_play"

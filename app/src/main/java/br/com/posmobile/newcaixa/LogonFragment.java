@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,15 +61,17 @@ public class LogonFragment extends Fragment {
         lvMenuItens.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Fragment fragment = null;
                 switch (position)
                {
 
                    case 1:
-                       Intent it = new Intent(getActivity(), ExtratoActivity.class);
-                       startActivity(it);
+                       fragment = new ExtratoFragment();
+                       replaceFragment(fragment);
+                       break;
 
                    case 3:
-                       Intent it2 = new Intent(getActivity(), ExtratoActivity.class);
+                       Intent it2 = new Intent(getActivity(), ExtratoFragment.class);
                        startActivity(it2);
                    default:
                        Toast.makeText(getContext(), menuItens.get(position) + " clicado!!", Toast.LENGTH_LONG).show();
@@ -76,5 +79,12 @@ public class LogonFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    public void replaceFragment(Fragment someFragment) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.viewpager, someFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }
