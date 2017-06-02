@@ -7,12 +7,11 @@
         android:id="@+id/ivIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_extrato_others"
         android:layout_marginTop="22dp"
+        app:srcCompat="@mipmap/ic_extrato_lazer"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/tvValor"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_toStartOf="@+id/tvValor" />
 
     <TextView
         android:id="@+id/tvLocal"
@@ -26,7 +25,7 @@
         android:layout_marginTop="12dp"
         android:text="Católica do Tocantins"
         android:textColor="#939393"
-        android:textSize="14sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/tvValor"
@@ -35,6 +34,7 @@
         android:layout_alignLeft="@+id/tvLocal"
         android:layout_alignStart="@+id/tvLocal"
         android:layout_below="@+id/tvLocal"
+        android:paddingBottom="10dp"
         android:text="R$ 15,39"
         android:textColor="#939393"
         android:textSize="14sp" />
@@ -47,8 +47,8 @@
         android:layout_toEndOf="@+id/ivIcon"
         android:layout_toRightOf="@+id/ivIcon"
         android:text="Outros"
-        android:textColor="#000"
-        android:textSize="9sp" />
+        android:textColor="#000000"
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/tvHora"

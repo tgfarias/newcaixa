@@ -55,7 +55,8 @@ public class ExtratoAdapter extends BaseAdapter {
         tvLocal.setText(extrato.local);
         tvValor.setText("R$ " + extrato.valor);
         tvHora.setText(extrato.hora);
-        ivIcon.setImageResource(R.mipmap.ic_extrato_others);
+
+        ivIcon.setImageResource(extrato.resId);
         return linha;
 
     }

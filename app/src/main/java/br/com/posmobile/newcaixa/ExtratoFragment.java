@@ -37,14 +37,14 @@ public class ExtratoFragment extends Fragment {
         //textView.setText("Extrato Fragment #" + mPage);
         lvExtrato = (ListView) view.findViewById(R.id.lvExtrato);
         final List<Extrato> extratoItens = new ArrayList<>();
-        extratoItens.add(new Extrato("Outros", "Católica do Tocantins", 15.39, "22:35"));
-        extratoItens.add(new Extrato("Saúde", "Fcia Pague Menos", 39.70, "18:15"));
-        extratoItens.add(new Extrato("Supermercado", "Extra Palmas", 12.43, "14:49"));
-        extratoItens.add(new Extrato("Transporte", "Posto Flex", 60.00, "19:59"));
-        extratoItens.add(new Extrato("Lazer", "Cinemark", 34.00, "21:00"));
+        extratoItens.add(new Extrato("Outros", "Católica do Tocantins", "15,39", "22:35", R.mipmap.ic_extrato_others));
+        extratoItens.add(new Extrato("Saúde", "Fcia Pague Menos", "39,70", "18:15", R.mipmap.ic_extrato_saude));
+        extratoItens.add(new Extrato("Supermercado", "Extra Palmas", "12,43", "14:49", R.mipmap.ic_extrato_market));
+        extratoItens.add(new Extrato("Transporte", "Posto Flex", "60,00", "19:59", R.mipmap.ic_extrato_transporte));
+        extratoItens.add(new Extrato("Lazer", "Cinemark", "34,00", "21:00", R.mipmap.ic_extrato_lazer));
 
 
-        extratoAdapter = new ExtratoAdapter(getActivity(), extratoItens );
+        extratoAdapter = new ExtratoAdapter(getActivity(), extratoItens);
         lvExtrato.setAdapter(extratoAdapter);
 
         return view;

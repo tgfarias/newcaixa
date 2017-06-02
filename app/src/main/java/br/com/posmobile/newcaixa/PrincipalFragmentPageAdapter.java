@@ -36,9 +36,11 @@ class PrincipalFragmentPageAdapter extends FragmentPagerAdapter {
             case 0:
                 return LogonFragment.newInstance(position + 1);
             case 1:
-                return NotificationsFragment.newInstance(position + 1);
+                //return NotificationsFragment.newInstance(position + 1);
+                return LoteriaFragment.newInstance(position + 1);
             case 2:
-                return ConfigFragment.newInstance(position + 1);
+                //return ConfigFragment.newInstance(position + 1);
+                return ExtratoFragment.newInstance(position + 1);
             default:
                 return null;
         }

@@ -43,8 +43,6 @@ public class LogonFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_logon, container, false);
-        //TextView textView = (TextView) view;
-        //textView.setText("Fragment #" + mPage);
 
         lvMenuItens = (ListView) view.findViewById(R.id.lvMenuItens);
         final List<String> menuItens = new ArrayList<>();
